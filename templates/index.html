@@ -1,0 +1,64 @@
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+		<link rel="manifest" href="/static/manifest.json">
+
+		<link rel="apple-touch-icon" href="/assets/logo-96x96.png">
+		<meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+		<meta name="theme-color" content="#FFE1C4">
+
+		<!-- Name of the app -->
+		<title>Camera App</title>
+
+		<!-- Link to main style sheet -->
+		<link rel="stylesheet" href="../static/css/style.css"> 
+	</head>
+	<body>
+
+		<!-- Camera -->
+		<main id="camera">
+
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
+		    
+		    <!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+
+		    <!-- Camera output -->
+			<img src="//:0" alt="" id="camera--output" name="image" type="image">
+			
+		
+			
+			<!-- Displaying input -->
+			<div >
+				<div id="result">Try Taking a pic :)</div>
+
+				<div class="caption1" style="display: none;"></div>
+				
+			</div>
+			<div >
+				<div id="result2"></div>
+				<!-- <div id="caption2" style="display: block; font-size: 30px;">English</div> -->
+			</div>
+			
+
+		    <!-- Camera trigger -->
+		    <button id="camera--trigger">Take a picture</button>
+			
+		</main>
+
+		<!-- Reference to your JavaScript file -->
+		<script src="../static/js/app.js"></script> 
+		<!-- <script>
+			if (!navigator.serviceWorker.controller) {
+				navigator.serviceWorker.register("sw.js").then(function(reg) {
+					console.log("Service worker has been registered for scope: " + reg.scope);
+				});
+			}
+		</script> -->
+	</body>
+
+</html>
